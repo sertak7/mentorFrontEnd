@@ -1,0 +1,98 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--Grayishblue);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem;
+
+}
+
+.QR{
+    background-color: var(--white);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+@media (min-width:768px) {
+    .QR{
+        background-color: var(--white);
+        width:25rem;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0 auto;
+        border-radius: 1rem;    
+    }
+
+}
+
+@media (min-width:344px) {
+    .QR{
+        background-color: var(--white);
+        width:25rem;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0 auto;
+        border-radius: 1rem;    
+    }
+
+}
+
+.QR__img{
+    width: 20rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.QR__titulo{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.QR__subtitulo{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight:200;
+    color: var(--Lightgray);
+}
+
+.attribution{
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
